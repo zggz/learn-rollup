@@ -1,20 +1,30 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@types/react': ^18.0.27
+  '@types/react-dom': ^18.0.10
   esbuild: ^0.17.6
   prettier: ^2.8.4
+  react: ^18.2.0
+  react-dom: ^18.2.0
   rollup: ^3.14.0
   rollup-plugin-dts: ^5.1.1
   rollup-plugin-esbuild: ^5.0.0
   typescript: ^4.9.5
+  vite: ^4.1.1
 
 devDependencies:
+  '@types/react': 18.0.27
+  '@types/react-dom': 18.0.10
   esbuild: 0.17.6
   prettier: 2.8.4
+  react: 18.2.0
+  react-dom: 18.2.0_react@18.2.0
   rollup: 3.14.0
   rollup-plugin-dts: 5.1.1_2za6rqstu4xegr2hrsgsskkobi
   rollup-plugin-esbuild: 5.0.0_b3jmhtdib4yjqy7kdbowunea64
   typescript: 4.9.5
+  vite: 4.1.1
 
 packages:
 
@@ -28,13 +38,13 @@ packages:
     optional: true
 
   /@babel/helper-validator-identifier/7.19.1:
-    resolution: {integrity: sha1-fuqDTPMpAf/cGn7lVeL5wn4knKI=}
+    resolution: {integrity: sha1-fuqDTPMpAf/cGn7lVeL5wn4knKI=, tarball: https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/@babel/helper-validator-identifier/-/helper-validator-identifier-7.19.1.tgz}
     engines: {node: '>=6.9.0'}
     dev: true
     optional: true
 
   /@babel/highlight/7.18.6:
-    resolution: {integrity: sha1-gRWGAek+JWN5Wty/vfXWS+Py7N8=}
+    resolution: {integrity: sha1-gRWGAek+JWN5Wty/vfXWS+Py7N8=, tarball: https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/@babel/highlight/-/highlight-7.18.6.tgz}
     engines: {node: '>=6.9.0'}
     dependencies:
       '@babel/helper-validator-identifier': 7.19.1
@@ -43,10 +53,28 @@ packages:
     dev: true
     optional: true
 
+  /@esbuild/android-arm/0.16.17:
+    resolution: {integrity: sha1-AltiRtP2i3u6qXBpFE+1+3Dy//I=, tarball: https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/@esbuild/android-arm/-/android-arm-0.16.17.tgz}
+    engines: {node: '>=12'}
+    cpu: [arm]
+    os: [android]
+    requiresBuild: true
+    dev: true
+    optional: true
+
   /@esbuild/android-arm/0.17.6:
     resolution: {integrity: sha1-rGtWdNohSZl/YwazMU2uWbvgrCY=, tarball: https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/@esbuild/android-arm/-/android-arm-0.17.6.tgz}
     engines: {node: '>=12'}
     cpu: [arm]
+    os: [android]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@esbuild/android-arm64/0.16.17:
+    resolution: {integrity: sha1-z5HobfEnqj0UF0Ttr8ugq9xXfSM=, tarball: https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/@esbuild/android-arm64/-/android-arm64-0.16.17.tgz}
+    engines: {node: '>=12'}
+    cpu: [arm64]
     os: [android]
     requiresBuild: true
     dev: true
@@ -61,6 +89,15 @@ packages:
     dev: true
     optional: true
 
+  /@esbuild/android-x64/0.16.17:
+    resolution: {integrity: sha1-yCDg/vmC+ZqFxLi/3VgoNfBM2W4=, tarball: https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/@esbuild/android-x64/-/android-x64-0.16.17.tgz}
+    engines: {node: '>=12'}
+    cpu: [x64]
+    os: [android]
+    requiresBuild: true
+    dev: true
+    optional: true
+
   /@esbuild/android-x64/0.17.6:
     resolution: {integrity: sha1-GMSL+UkEZjj8IJQJ/2hMa7NaVGI=, tarball: https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/@esbuild/android-x64/-/android-x64-0.17.6.tgz}
     engines: {node: '>=12'}
@@ -70,10 +107,28 @@ packages:
     dev: true
     optional: true
 
+  /@esbuild/darwin-arm64/0.16.17:
+    resolution: {integrity: sha1-7e9Eh69rIa+runvlEywm0iN5siA=, tarball: https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/@esbuild/darwin-arm64/-/darwin-arm64-0.16.17.tgz}
+    engines: {node: '>=12'}
+    cpu: [arm64]
+    os: [darwin]
+    requiresBuild: true
+    dev: true
+    optional: true
+
   /@esbuild/darwin-arm64/0.17.6:
     resolution: {integrity: sha1-s/4Zrx5K/ISaB8BjGBJOnAQeBkY=, tarball: https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/@esbuild/darwin-arm64/-/darwin-arm64-0.17.6.tgz}
     engines: {node: '>=12'}
     cpu: [arm64]
+    os: [darwin]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@esbuild/darwin-x64/0.16.17:
+    resolution: {integrity: sha1-QoKRaHMAccQe8NAo2DGe6g4pBLQ=, tarball: https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/@esbuild/darwin-x64/-/darwin-x64-0.16.17.tgz}
+    engines: {node: '>=12'}
+    cpu: [x64]
     os: [darwin]
     requiresBuild: true
     dev: true
@@ -88,10 +143,28 @@ packages:
     dev: true
     optional: true
 
+  /@esbuild/freebsd-arm64/0.16.17:
+    resolution: {integrity: sha1-H0r0iL/H6c7QQgcDTTmOeTtXCic=, tarball: https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/@esbuild/freebsd-arm64/-/freebsd-arm64-0.16.17.tgz}
+    engines: {node: '>=12'}
+    cpu: [arm64]
+    os: [freebsd]
+    requiresBuild: true
+    dev: true
+    optional: true
+
   /@esbuild/freebsd-arm64/0.17.6:
     resolution: {integrity: sha1-6kUxrtpwsXy+DnewxcNimAU4VbQ=, tarball: https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/@esbuild/freebsd-arm64/-/freebsd-arm64-0.17.6.tgz}
     engines: {node: '>=12'}
     cpu: [arm64]
+    os: [freebsd]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@esbuild/freebsd-x64/0.16.17:
+    resolution: {integrity: sha1-Y2MG8Z6byYHgaqHXdzAtrY/dr3I=, tarball: https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/@esbuild/freebsd-x64/-/freebsd-x64-0.16.17.tgz}
+    engines: {node: '>=12'}
+    cpu: [x64]
     os: [freebsd]
     requiresBuild: true
     dev: true
@@ -106,10 +179,28 @@ packages:
     dev: true
     optional: true
 
+  /@esbuild/linux-arm/0.16.17:
+    resolution: {integrity: sha1-tZHmpZ2cT+DurdSHSxV6t4z18ZY=, tarball: https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/@esbuild/linux-arm/-/linux-arm-0.16.17.tgz}
+    engines: {node: '>=12'}
+    cpu: [arm]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
   /@esbuild/linux-arm/0.17.6:
     resolution: {integrity: sha1-CXoO4r45/tPzfqDlhwUpYeO8wRA=, tarball: https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/@esbuild/linux-arm/-/linux-arm-0.17.6.tgz}
     engines: {node: '>=12'}
     cpu: [arm]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@esbuild/linux-arm64/0.16.17:
+    resolution: {integrity: sha1-oAP3/yN8UB4JXU86CeWPx7JaSso=, tarball: https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/@esbuild/linux-arm64/-/linux-arm64-0.16.17.tgz}
+    engines: {node: '>=12'}
+    cpu: [arm64]
     os: [linux]
     requiresBuild: true
     dev: true
@@ -124,10 +215,28 @@ packages:
     dev: true
     optional: true
 
+  /@esbuild/linux-ia32/0.16.17:
+    resolution: {integrity: sha1-JDM6EQJ+9GoY9XAZRQpRiJGOKlQ=, tarball: https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/@esbuild/linux-ia32/-/linux-ia32-0.16.17.tgz}
+    engines: {node: '>=12'}
+    cpu: [ia32]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
   /@esbuild/linux-ia32/0.17.6:
     resolution: {integrity: sha1-o4p4nQ7RV0laa1tEaex4aLWeUng=, tarball: https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/@esbuild/linux-ia32/-/linux-ia32-0.17.6.tgz}
     engines: {node: '>=12'}
     cpu: [ia32]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@esbuild/linux-loong64/0.16.17:
+    resolution: {integrity: sha1-1a1FnUHtQrvU0AUlazGILsUiJ9g=, tarball: https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/@esbuild/linux-loong64/-/linux-loong64-0.16.17.tgz}
+    engines: {node: '>=12'}
+    cpu: [loong64]
     os: [linux]
     requiresBuild: true
     dev: true
@@ -142,10 +251,28 @@ packages:
     dev: true
     optional: true
 
+  /@esbuild/linux-mips64el/0.16.17:
+    resolution: {integrity: sha1-TllnpmXDg2CwqCBVlDd9Tc+cNyY=, tarball: https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/@esbuild/linux-mips64el/-/linux-mips64el-0.16.17.tgz}
+    engines: {node: '>=12'}
+    cpu: [mips64el]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
   /@esbuild/linux-mips64el/0.17.6:
     resolution: {integrity: sha1-Ffu+BGSNlE7GYO5Xl/698Jqb1q8=, tarball: https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/@esbuild/linux-mips64el/-/linux-mips64el-0.17.6.tgz}
     engines: {node: '>=12'}
     cpu: [mips64el]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@esbuild/linux-ppc64/0.16.17:
+    resolution: {integrity: sha1-IGRDoC61aPn98LQ4+9R9Juc1r8g=, tarball: https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/@esbuild/linux-ppc64/-/linux-ppc64-0.16.17.tgz}
+    engines: {node: '>=12'}
+    cpu: [ppc64]
     os: [linux]
     requiresBuild: true
     dev: true
@@ -160,10 +287,28 @@ packages:
     dev: true
     optional: true
 
+  /@esbuild/linux-riscv64/0.16.17:
+    resolution: {integrity: sha1-w1HkM9AJvyVueYrQSBUsjXbaL8k=, tarball: https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/@esbuild/linux-riscv64/-/linux-riscv64-0.16.17.tgz}
+    engines: {node: '>=12'}
+    cpu: [riscv64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
   /@esbuild/linux-riscv64/0.17.6:
     resolution: {integrity: sha1-vDxm1VeMO5lRpu1odj8qaFaCfko=, tarball: https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/@esbuild/linux-riscv64/-/linux-riscv64-0.17.6.tgz}
     engines: {node: '>=12'}
     cpu: [riscv64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@esbuild/linux-s390x/0.16.17:
+    resolution: {integrity: sha1-Zh8nHl1ZYVuEtoAdHCEjrRPZvYc=, tarball: https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/@esbuild/linux-s390x/-/linux-s390x-0.16.17.tgz}
+    engines: {node: '>=12'}
+    cpu: [s390x]
     os: [linux]
     requiresBuild: true
     dev: true
@@ -178,11 +323,29 @@ packages:
     dev: true
     optional: true
 
+  /@esbuild/linux-x64/0.16.17:
+    resolution: {integrity: sha1-5LoY6LFJqJyYI1FEOjd8cjdiuF8=, tarball: https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/@esbuild/linux-x64/-/linux-x64-0.16.17.tgz}
+    engines: {node: '>=12'}
+    cpu: [x64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
   /@esbuild/linux-x64/0.17.6:
     resolution: {integrity: sha1-ulH4dgqbk3CiUw+Ylkvl8J2Q/tA=, tarball: https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/@esbuild/linux-x64/-/linux-x64-0.17.6.tgz}
     engines: {node: '>=12'}
     cpu: [x64]
     os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@esbuild/netbsd-x64/0.16.17:
+    resolution: {integrity: sha1-fU9AQeMMXAfdJP+ilcc/BgOOx3U=, tarball: https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/@esbuild/netbsd-x64/-/netbsd-x64-0.16.17.tgz}
+    engines: {node: '>=12'}
+    cpu: [x64]
+    os: [netbsd]
     requiresBuild: true
     dev: true
     optional: true
@@ -196,11 +359,29 @@ packages:
     dev: true
     optional: true
 
+  /@esbuild/openbsd-x64/0.16.17:
+    resolution: {integrity: sha1-lw+n+EcGgfPmsdsMxCGkr4Bg7DU=, tarball: https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/@esbuild/openbsd-x64/-/openbsd-x64-0.16.17.tgz}
+    engines: {node: '>=12'}
+    cpu: [x64]
+    os: [openbsd]
+    requiresBuild: true
+    dev: true
+    optional: true
+
   /@esbuild/openbsd-x64/0.17.6:
     resolution: {integrity: sha1-z0ufuAzm0oCmc9VKcx2cZh+IsIM=, tarball: https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/@esbuild/openbsd-x64/-/openbsd-x64-0.17.6.tgz}
     engines: {node: '>=12'}
     cpu: [x64]
     os: [openbsd]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@esbuild/sunos-x64/0.16.17:
+    resolution: {integrity: sha1-q8YOfEq/i4n7ek/mmhSEEyI4Aiw=, tarball: https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/@esbuild/sunos-x64/-/sunos-x64-0.16.17.tgz}
+    engines: {node: '>=12'}
+    cpu: [x64]
+    os: [sunos]
     requiresBuild: true
     dev: true
     optional: true
@@ -214,6 +395,15 @@ packages:
     dev: true
     optional: true
 
+  /@esbuild/win32-arm64/0.16.17:
+    resolution: {integrity: sha1-ew/56MMmVTenp7H9miTnvTn82Ho=, tarball: https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/@esbuild/win32-arm64/-/win32-arm64-0.16.17.tgz}
+    engines: {node: '>=12'}
+    cpu: [arm64]
+    os: [win32]
+    requiresBuild: true
+    dev: true
+    optional: true
+
   /@esbuild/win32-arm64/0.17.6:
     resolution: {integrity: sha1-rOAYbpBNEJ6kEjMXo7o1vv6DrCE=, tarball: https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/@esbuild/win32-arm64/-/win32-arm64-0.17.6.tgz}
     engines: {node: '>=12'}
@@ -223,10 +413,28 @@ packages:
     dev: true
     optional: true
 
+  /@esbuild/win32-ia32/0.16.17:
+    resolution: {integrity: sha1-6Q/lJn1xp7dWev3EA9/RmMKS6wk=, tarball: https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/@esbuild/win32-ia32/-/win32-ia32-0.16.17.tgz}
+    engines: {node: '>=12'}
+    cpu: [ia32]
+    os: [win32]
+    requiresBuild: true
+    dev: true
+    optional: true
+
   /@esbuild/win32-ia32/0.17.6:
     resolution: {integrity: sha1-f7P21BQ+KDp/ff/JimuvMbs2XH4=, tarball: https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/@esbuild/win32-ia32/-/win32-ia32-0.17.6.tgz}
     engines: {node: '>=12'}
     cpu: [ia32]
+    os: [win32]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@esbuild/win32-x64/0.16.17:
+    resolution: {integrity: sha1-xaGkv+G1fww+YbKYg1JcbaPlwJE=, tarball: https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/@esbuild/win32-x64/-/win32-x64-0.16.17.tgz}
+    engines: {node: '>=12'}
+    cpu: [x64]
     os: [win32]
     requiresBuild: true
     dev: true
@@ -242,7 +450,7 @@ packages:
     optional: true
 
   /@jridgewell/sourcemap-codec/1.4.14:
-    resolution: {integrity: sha1-rdTJjTQUcqKJGQtCTvvbCWmRuyQ=}
+    resolution: {integrity: sha1-rdTJjTQUcqKJGQtCTvvbCWmRuyQ=, tarball: https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/@jridgewell/sourcemap-codec/-/sourcemap-codec-1.4.14.tgz}
     dev: true
 
   /@rollup/pluginutils/5.0.2_rollup@3.14.0:
@@ -264,8 +472,30 @@ packages:
     resolution: {integrity: sha1-X7LlNsGum/NTZu7Yeegn+lnKQcI=}
     dev: true
 
+  /@types/prop-types/15.7.5:
+    resolution: {integrity: sha1-XxnSuFqY6VWANvajysyIGUIPBc8=}
+    dev: true
+
+  /@types/react-dom/18.0.10:
+    resolution: {integrity: sha1-O2bexWqg8Wpswm2p6cqWw1wLQ1I=}
+    dependencies:
+      '@types/react': 18.0.27
+    dev: true
+
+  /@types/react/18.0.27:
+    resolution: {integrity: sha1-2UJavhh6APil7BgrAQ1P2dpwO3E=}
+    dependencies:
+      '@types/prop-types': 15.7.5
+      '@types/scheduler': 0.16.2
+      csstype: 3.1.1
+    dev: true
+
+  /@types/scheduler/0.16.2:
+    resolution: {integrity: sha1-GmL4lSVyPd4kuhsBsJK/XfitTTk=}
+    dev: true
+
   /ansi-styles/3.2.1:
-    resolution: {integrity: sha1-QfuyAkPlCxK+DwS43tvwdSDOhB0=}
+    resolution: {integrity: sha1-QfuyAkPlCxK+DwS43tvwdSDOhB0=, tarball: https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/ansi-styles/-/ansi-styles-3.2.1.tgz}
     engines: {node: '>=4'}
     dependencies:
       color-convert: 1.9.3
@@ -273,7 +503,7 @@ packages:
     optional: true
 
   /chalk/2.4.2:
-    resolution: {integrity: sha1-zUJUFnelQzPPVBpJEIwUMrRMlCQ=}
+    resolution: {integrity: sha1-zUJUFnelQzPPVBpJEIwUMrRMlCQ=, tarball: https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/chalk/-/chalk-2.4.2.tgz}
     engines: {node: '>=4'}
     dependencies:
       ansi-styles: 3.2.1
@@ -283,16 +513,20 @@ packages:
     optional: true
 
   /color-convert/1.9.3:
-    resolution: {integrity: sha1-u3GFBpDh8TZWfeYp0tVHHe2kweg=}
+    resolution: {integrity: sha1-u3GFBpDh8TZWfeYp0tVHHe2kweg=, tarball: https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/color-convert/-/color-convert-1.9.3.tgz}
     dependencies:
       color-name: 1.1.3
     dev: true
     optional: true
 
   /color-name/1.1.3:
-    resolution: {integrity: sha1-p9BVi9icQveV3UIyj3QIMcpTvCU=}
+    resolution: {integrity: sha1-p9BVi9icQveV3UIyj3QIMcpTvCU=, tarball: https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/color-name/-/color-name-1.1.3.tgz}
     dev: true
     optional: true
+
+  /csstype/3.1.1:
+    resolution: {integrity: sha1-hBtTLEXHWO5UahHVvXt7RzyMMLk=}
+    dev: true
 
   /debug/4.3.4:
     resolution: {integrity: sha1-Exn2V5NX8jONMzfSzdSRS7XcyGU=}
@@ -308,6 +542,36 @@ packages:
 
   /es-module-lexer/1.1.1:
     resolution: {integrity: sha1-1P7TY9zZS/ElhiZve4C77m2Azm4=}
+    dev: true
+
+  /esbuild/0.16.17:
+    resolution: {integrity: sha1-/Cw5FMV+51BjX+5xuJ9hXyUGUlk=}
+    engines: {node: '>=12'}
+    hasBin: true
+    requiresBuild: true
+    optionalDependencies:
+      '@esbuild/android-arm': 0.16.17
+      '@esbuild/android-arm64': 0.16.17
+      '@esbuild/android-x64': 0.16.17
+      '@esbuild/darwin-arm64': 0.16.17
+      '@esbuild/darwin-x64': 0.16.17
+      '@esbuild/freebsd-arm64': 0.16.17
+      '@esbuild/freebsd-x64': 0.16.17
+      '@esbuild/linux-arm': 0.16.17
+      '@esbuild/linux-arm64': 0.16.17
+      '@esbuild/linux-ia32': 0.16.17
+      '@esbuild/linux-loong64': 0.16.17
+      '@esbuild/linux-mips64el': 0.16.17
+      '@esbuild/linux-ppc64': 0.16.17
+      '@esbuild/linux-riscv64': 0.16.17
+      '@esbuild/linux-s390x': 0.16.17
+      '@esbuild/linux-x64': 0.16.17
+      '@esbuild/netbsd-x64': 0.16.17
+      '@esbuild/openbsd-x64': 0.16.17
+      '@esbuild/sunos-x64': 0.16.17
+      '@esbuild/win32-arm64': 0.16.17
+      '@esbuild/win32-ia32': 0.16.17
+      '@esbuild/win32-x64': 0.16.17
     dev: true
 
   /esbuild/0.17.6:
@@ -341,7 +605,7 @@ packages:
     dev: true
 
   /escape-string-regexp/1.0.5:
-    resolution: {integrity: sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ=}
+    resolution: {integrity: sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ=, tarball: https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz}
     engines: {node: '>=0.8.0'}
     dev: true
     optional: true
@@ -358,11 +622,28 @@ packages:
     dev: true
     optional: true
 
+  /function-bind/1.1.1:
+    resolution: {integrity: sha1-pWiZ0+o8m6uHS7l3O3xe3pL0iV0=}
+    dev: true
+
   /has-flag/3.0.0:
-    resolution: {integrity: sha1-tdRU3CGZriJWmfNGfloH87lVuv0=}
+    resolution: {integrity: sha1-tdRU3CGZriJWmfNGfloH87lVuv0=, tarball: https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/has-flag/-/has-flag-3.0.0.tgz}
     engines: {node: '>=4'}
     dev: true
     optional: true
+
+  /has/1.0.3:
+    resolution: {integrity: sha1-ci18v8H2qoJB8W3YFOAR4fQeh5Y=}
+    engines: {node: '>= 0.4.0'}
+    dependencies:
+      function-bind: 1.1.1
+    dev: true
+
+  /is-core-module/2.11.0:
+    resolution: {integrity: sha1-rUyz44Y+gUUjyW8/WNJsxXD/AUQ=}
+    dependencies:
+      has: 1.0.3
+    dev: true
 
   /joycon/3.1.1:
     resolution: {integrity: sha1-vOhZbWroCPi2gWj1/GkoCZaJTwM=}
@@ -372,14 +653,20 @@ packages:
   /js-tokens/4.0.0:
     resolution: {integrity: sha1-GSA/tZmR35jjoocFDUZHzerzJJk=}
     dev: true
-    optional: true
 
   /jsonc-parser/3.2.0:
     resolution: {integrity: sha1-Mf8/TCuXk/icZyEmJ8UcY5T4jnY=}
     dev: true
 
+  /loose-envify/1.4.0:
+    resolution: {integrity: sha1-ce5R+nvkyuwaY4OffmgtgTLTDK8=}
+    hasBin: true
+    dependencies:
+      js-tokens: 4.0.0
+    dev: true
+
   /magic-string/0.27.0:
-    resolution: {integrity: sha1-5KNBO0urbZjSvs/9SLSiV+/9u/M=}
+    resolution: {integrity: sha1-5KNBO0urbZjSvs/9SLSiV+/9u/M=, tarball: https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/magic-string/-/magic-string-0.27.0.tgz}
     engines: {node: '>=12'}
     dependencies:
       '@jridgewell/sourcemap-codec': 1.4.14
@@ -389,19 +676,68 @@ packages:
     resolution: {integrity: sha1-0J0fNXtEP0kzgqjrPM0YOHKuYAk=}
     dev: true
 
+  /nanoid/3.3.4:
+    resolution: {integrity: sha1-cwtn480J4t6s8DwCfIHJ2dvF6Ks=}
+    engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
+    hasBin: true
+    dev: true
+
+  /path-parse/1.0.7:
+    resolution: {integrity: sha1-+8EUtgykKzDZ2vWFjkvWi77bZzU=}
+    dev: true
+
+  /picocolors/1.0.0:
+    resolution: {integrity: sha1-y1vcdP8/UYkiNur3nWi8RFZKuBw=}
+    dev: true
+
   /picomatch/2.3.1:
     resolution: {integrity: sha1-O6ODNzNkbZ0+SZWUbBNlpn+wekI=}
     engines: {node: '>=8.6'}
     dev: true
 
+  /postcss/8.4.21:
+    resolution: {integrity: sha1-xjm3GaV+/DGHsToddlZ1SF9BNPQ=}
+    engines: {node: ^10 || ^12 || >=14}
+    dependencies:
+      nanoid: 3.3.4
+      picocolors: 1.0.0
+      source-map-js: 1.0.2
+    dev: true
+
   /prettier/2.8.4:
-    resolution: {integrity: sha1-NN0llWKb+7edNErEqR/5SGlEY8M=, tarball: https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/prettier/-/prettier-2.8.4.tgz}
+    resolution: {integrity: sha1-NN0llWKb+7edNErEqR/5SGlEY8M=}
     engines: {node: '>=10.13.0'}
     hasBin: true
     dev: true
 
+  /react-dom/18.2.0_react@18.2.0:
+    resolution: {integrity: sha1-IqrzhwjbJnTtmtoiTKSqcI2CHj0=}
+    peerDependencies:
+      react: ^18.2.0
+    dependencies:
+      loose-envify: 1.4.0
+      react: 18.2.0
+      scheduler: 0.23.0
+    dev: true
+
+  /react/18.2.0:
+    resolution: {integrity: sha1-VVvZhZKIMlX6AN4U8RUakXtdd9U=}
+    engines: {node: '>=0.10.0'}
+    dependencies:
+      loose-envify: 1.4.0
+    dev: true
+
+  /resolve/1.22.1:
+    resolution: {integrity: sha1-J8suu1P5GrtJRwqSi7p1WAZqwXc=}
+    hasBin: true
+    dependencies:
+      is-core-module: 2.11.0
+      path-parse: 1.0.7
+      supports-preserve-symlinks-flag: 1.0.0
+    dev: true
+
   /rollup-plugin-dts/5.1.1_2za6rqstu4xegr2hrsgsskkobi:
-    resolution: {integrity: sha1-jMNqsTE1t37wz9YQfkr1YcXf/QQ=}
+    resolution: {integrity: sha1-jMNqsTE1t37wz9YQfkr1YcXf/QQ=, tarball: https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/rollup-plugin-dts/-/rollup-plugin-dts-5.1.1.tgz}
     engines: {node: '>=v14'}
     peerDependencies:
       rollup: ^3.0.0
@@ -440,16 +776,65 @@ packages:
       fsevents: 2.3.2
     dev: true
 
+  /scheduler/0.23.0:
+    resolution: {integrity: sha1-uoBBr8PTDrIGpIe2s4QALk5h/f4=}
+    dependencies:
+      loose-envify: 1.4.0
+    dev: true
+
+  /source-map-js/1.0.2:
+    resolution: {integrity: sha1-rbw2HZxi3zgBJefxYfccgm8eSQw=}
+    engines: {node: '>=0.10.0'}
+    dev: true
+
   /supports-color/5.5.0:
-    resolution: {integrity: sha1-4uaaRKyHcveKHsCzW2id9lMO/I8=}
+    resolution: {integrity: sha1-4uaaRKyHcveKHsCzW2id9lMO/I8=, tarball: https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/supports-color/-/supports-color-5.5.0.tgz}
     engines: {node: '>=4'}
     dependencies:
       has-flag: 3.0.0
     dev: true
     optional: true
 
+  /supports-preserve-symlinks-flag/1.0.0:
+    resolution: {integrity: sha1-btpL00SjyUrqN21MwxvHcxEDngk=}
+    engines: {node: '>= 0.4'}
+    dev: true
+
   /typescript/4.9.5:
     resolution: {integrity: sha1-CVl5+bzA0J2jJNWNA86Pg3TL5lo=}
     engines: {node: '>=4.2.0'}
     hasBin: true
+    dev: true
+
+  /vite/4.1.1:
+    resolution: {integrity: sha1-Oxi4Gk6Fzj31y9v0xofZPr9ALms=}
+    engines: {node: ^14.18.0 || >=16.0.0}
+    hasBin: true
+    peerDependencies:
+      '@types/node': '>= 14'
+      less: '*'
+      sass: '*'
+      stylus: '*'
+      sugarss: '*'
+      terser: ^5.4.0
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
+      less:
+        optional: true
+      sass:
+        optional: true
+      stylus:
+        optional: true
+      sugarss:
+        optional: true
+      terser:
+        optional: true
+    dependencies:
+      esbuild: 0.16.17
+      postcss: 8.4.21
+      resolve: 1.22.1
+      rollup: 3.14.0
+    optionalDependencies:
+      fsevents: 2.3.2
     dev: true

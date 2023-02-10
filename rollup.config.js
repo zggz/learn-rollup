@@ -5,7 +5,7 @@ import dts from "rollup-plugin-dts";
 
 const rollupConfig = defineConfig([
   {
-    input: "src/index.ts",
+    input: "src/index.tsx",
     output: [
       {
         file: "dist/cjs/bundle.cjs.js",
@@ -16,8 +16,7 @@ const rollupConfig = defineConfig([
         // file: "d.ejs.js",
         dir:"dist/ejs",
         format: "es",
-        externalLiveBindings: false,
-        // preserveModules:true,
+         preserveModules:true,
         // intro: 'const ENVIRONMENT = "production";',
         banner: "/* my-library version " + 1 + " */",
         footer: "/* follow me on Twitter! @rich_harris */",
@@ -34,9 +33,9 @@ const rollupConfig = defineConfig([
     ],
   },
   {
-    input: "src/index.ts",
+    input: "src/index.tsx",
     output: [{ dir: "dist/types", format: "es" }],
-    plugins: [dts()],
+    plugins: [dts({})],
   },
 ]);
 

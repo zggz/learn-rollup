@@ -2,25 +2,25 @@
 import { defineConfig } from "rollup";
 import esbuild from "rollup-plugin-esbuild";
 import dts from "rollup-plugin-dts";
+import postcss from "rollup-plugin-postcss";
 
 const rollupConfig = defineConfig([
   {
     input: "src/index.tsx",
     output: [
       {
-        file: "dist/cjs/bundle.cjs.js",
+        exports: "named",
+        dir: "dist/cjs",
         format: "cjs",
       },
 
       {
-        // file: "d.ejs.js",
-        dir:"dist/ejs",
+        dir: "dist/ejs",
         format: "es",
-         preserveModules:true,
+        preserveModules: true,
         // intro: 'const ENVIRONMENT = "production";',
         banner: "/* my-library version " + 1 + " */",
         footer: "/* follow me on Twitter! @rich_harris */",
-        strictDeprecations:true
       },
     ],
     plugins: [
@@ -30,13 +30,22 @@ const rollupConfig = defineConfig([
           __VERSION__: '"x.y.z"',
         },
       }),
+      postcss({
+        inject: (v) => {
+          console.log(v);
+          return `;import __styleInject__ from 'inject-head-style';__styleInject__(${v});`;
+        },
+        extract: false,
+        modules: false,
+        use: ["sass"],
+      }),
     ],
   },
-  {
-    input: "src/index.tsx",
-    output: [{ dir: "dist/types", format: "es" }],
-    plugins: [dts({})],
-  },
+  // {
+  //   input: "src/index.tsx",
+  //   output: [{ dir: "dist/types", format: "es" }],
+  //   plugins: [dts({})],
+  // },
 ]);
 
 export default rollupConfig;

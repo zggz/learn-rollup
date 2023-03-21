@@ -12,10 +12,18 @@ const rollupConfig = defineConfig([
         exports: "named",
         dir: "dist/cjs",
         format: "cjs",
+        
       },
-
       {
-        dir: "dist/ejs",
+        dir: "dist/esm",
+        format: "esm",
+        preserveModules: true,
+        // intro: 'const ENVIRONMENT = "production";',
+        banner: "/* my-library version " + 1 + " */",
+        footer: "/* follow me on Twitter! @rich_harris */",
+      },
+      {
+        dir: "dist/es",
         format: "es",
         preserveModules: true,
         // intro: 'const ENVIRONMENT = "production";',
